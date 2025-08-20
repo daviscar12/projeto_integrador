@@ -1,0 +1,111 @@
+:root {
+      --azul-escuro: #023047;
+  --azul-medio: #126782;
+  --azul-claro: #8ecae6;
+  --laranja: #fb8500;
+  --amarelo: #ffb703;
+  --branco: #f4f4f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--branco);
+      color: #333;
+    }
+
+    .header {
+      background: linear-gradient(to right, var(--azul-escuro), var(--azul-medio));
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background: #fff;
+      padding: 20px 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-buttons button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      color: var(--azul-escuro);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .nav-buttons button:hover,
+    .nav-buttons button.active {
+      color: var(--laranja);
+      border-color: var(--laranja);
+    }
+
+    .content-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    .content {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 300%;
+    }
+
+    .section {
+      width: 100%;
+      padding: 60px 30px;
+      background: white;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--azul-escuro);
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .section {
+        padding: 40px 20px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+      }
+    }

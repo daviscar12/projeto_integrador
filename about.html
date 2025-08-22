@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre a NaHoraDoCheckIn</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sobre nós</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <style>
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
+<body class="about100">
+  <header class="navbar51">
+    <div class="navbar-left51">
+      <span class="material-symbols-outlined icon51">home</span>
+      <span class="logo51">NaHoraDoCheckIn</span>
+    </div>
+    <nav class="navbar-right51">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="header">
-    <h1>Sobre a NaHoraDoCheckIn</h1>
-    <p>Conectando viajantes aos melhores hotéis do Brasil desde 2018. Nossa missão é tornar a reserva de hotéis simples, transparente e agradável.</p>
-  </div>
-
-  <div class="nav-buttons">
-    <button class="active" onclick="showSection(0)"><span class="material-icons">info</span> Quem Somos</button>
-    <button onclick="showSection(1)"><span class="material-icons">groups</span> Nossa Equipe</button>
-    <button onclick="showSection(2)"><span class="material-icons">history</span> Nossa História</button>
-  </div>
-
-  <div class="content-wrapper">
-    <div class="content" id="content">
-      <div class="section">
-        <h2>Quem Somos</h2>
-        <p>Somos apaixonados por viagens e por facilitar sua hospedagem. Na NaHoraDoCheckIn, acreditamos em experiências agradáveis, simples e seguras.</p>
+   <section class="about-section">
+  <div class="about-container">
+    <h1>Sobre Nós</h1>
+    <p>
+      Somos apaixonados por inovação, tecnologia e pessoas. Nossa missão é transformar ideias em soluções digitais incríveis, com criatividade, agilidade e foco no cliente.
+    </p>
+    <div class="team-section">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto João" class="team-photo">
+        <div class="team-name">João Silva</div>
+        <div class="team-role">Desenvolvedor Front-end</div>
+        <div class="team-social">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
       </div>
-      <div class="section">
-        <h2>Nossa Equipe</h2>
-        <p>Contamos com profissionais experientes nas áreas de turismo, tecnologia e atendimento, sempre prontos para te ajudar na sua jornada.</p>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto Maria" class="team-photo">
+        <div class="team-name">Maria Souza</div>
+        <div class="team-role">UI/UX Designer</div>
+        <div class="team-social">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
       </div>
-      <div class="section">
-        <h2>Nossa História</h2>
-        <p>Desde 2018, estamos ajudando milhares de viajantes a encontrarem as melhores opções de hospedagem em todo o Brasil. Evoluímos com a tecnologia para oferecer o melhor serviço possível.</p>
-      </div>
+      
     </div>
   </div>
-
-  <script src="assets/js/about.js"></script>
-
+</section>
+  
 </body>
 </html>

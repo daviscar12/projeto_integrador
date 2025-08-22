@@ -161,8 +161,10 @@ body {
 }
 
 .input21 select option {
-  
-  border-radius: 10px;
+  background: transparent;
+  border: none;
+  padding: 6px;
+  outline: none;
 }
 
 
@@ -183,6 +185,7 @@ body {
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    
 }
 
  @media (max-width: 790px) {
